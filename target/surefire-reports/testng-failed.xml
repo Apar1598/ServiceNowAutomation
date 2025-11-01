@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+<suite name="Failed suite [SnowSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="SnowTestChrome(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="com.snow.TestCases.IncidentTests">
         <methods>
-          <include name="verifyIncidentProcess"/>
+          <include name="verifyIncidentProcess" invocation-numbers="1"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.snow.TestCases.IncidentTests -->
-      <class name="com.snow.TestCases.LoginTests">
-        <methods>
-          <include name="tc_001_verifyLoginfunctionality"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.snow.TestCases.LoginTests -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- SnowTestChrome(failed) -->
+</suite> <!-- Failed suite [SnowSuite] -->
