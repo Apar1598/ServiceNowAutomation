@@ -16,7 +16,7 @@ public class PageActions {
 	public PageActions(WebDriver driver)
 	{
 		this.driver=driver;
-		wait=new WebDriverWait(driver,Duration.ofSeconds(35));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(70));
 	}
 	
 	public void enterDataintoField(WebElement element, String data)

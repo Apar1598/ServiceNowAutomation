@@ -117,6 +117,5 @@ public class Incident {
 		sa1.assertEquals(IncidentVerifications.verifyFieldValue(PropertyReader.elementReader("Inc_group_xpath")), group);
 		
 		sa1.assertAll();
-	}
-	
+	}		
 }
